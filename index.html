@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="music-player">
+    <div class="bg"></div>
+    <div class="wrap">
+      <div class="left-btn">
+        <a id="prev" class="prev" title="上一首" href="javascript:"></a>
+        <a id="togglePlay" class="play" title="播放/暂停" href="javascript:"></a>
+        <a id="next" class="next" title="下一首" href="javascript:"></a>
+      </div>
+      <div class="center">
+        <div class="info">
+          <a id="music-name" class="name" href="javascript:">无</a>
+          <a id="music-artist" class="artist" href="javascript:">无</a>
+        </div>
+        <div class="pbar">
+          <div class="bar-bg"></div>
+          <div class="bar-rdy"></div>
+          <div class="bar-cur"></div>
+          <span class="bar-btn"></span>
+          <span class="time">
+            <i id="current-time"></i>/<i id="total-time"></i>
+          </span>
+        </div>
+      </div>
+      <div class="right-btn">
+        <div class="volume">
+          <a id="mute" class="mute" title="静音" href="javascript:"></a>
+          <div class="ch-volume">
+            <div class="sbar">
+              <div class="bar-cur"></div>
+              <span class="bar-btn"></span>
+            </div>
+          </div>
+        </div>
+        <div class="mode">
+          <a id="play-mode" class="play-mode" title="循环播放" href="javascript:"></a>
+
+        </div>
+        <div class="list">
+          <a id="play-list" class="play-list" title="播放列表" href="javascript:">1</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <h1>播放列表</h1>
+    <ul id="music-list"></ul>
+  </div>
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
